@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: 'Jaro';
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    background-image: url('./img/FondoHeader.jpg');
+    background-repeat: repeat;
+    background-size: 30px;
+    z-index: 20;
+}
+
+.header-deco{
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    height: 30px;
+    background-image: url('./img/TileKirby.png');
+    background-repeat: repeat;
+    background-size: 30px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#parallax-container {
+    position: relative;
+    height: 500px;
+    /* Ocupa el 100% de la altura de la ventana */
+    overflow: hidden;
+    /* Oculta el desbordamiento */
+}
+
+#layer1 {
+    /*Debe de tenerlo cada imagen*/
+    position: absolute;
+    z-index: 1;
+    background-image: url('img/FondoAzul.jpg');
+    background-repeat: repeat;
+    background-size: 64px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transition: .6s;
+}
+
+#layerBg {
+    position: absolute;
+    bottom: 20;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    filter: saturate(50%);
+}
+
+#layerBg img {
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 1920px;
+}
+
+
+#layer2 {
+    position: absolute;
+    z-index: 3;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+.L {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.R {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#layer3 {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    bottom: -70px;
+}
+
+.nube {
+    top: 20px;
+}
+
+#layer4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    bottom: -150px;
+    width: 100%;
+    height: 25%;
+    transition: .6s;
+}
+
+.centro {
+    position: absolute;
+    bottom: 0;
+}
+
+#layer5 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    left: -30px;
+    width: 100%;
+    height: 25%;
+    transition: .6s;
+    bottom: -60px;
+}
+
+#layer6 {
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    height: 25%;
+    transition: .6s;
+    top: 0;
+}
+
+#personajes{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    z-index: 6;
+    height: auto;
+    width: 100%;
+    transition: 1s;
+
+}
+
+#personajes .R{
+    width: 220px;
+    right: 2%;
+    bottom: 50px;
+}
+#personajes .L{
+    width: 180px;
+    left: 4%;
+    bottom: 50px;
+}
+
+#layer7 {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+#layer8 {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#layer8 h1 {
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+
+    background-image: url('./img/FondoHeader.jpg');
+    background-size: cover;
+    background-position: center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    -webkit-text-stroke: 0.5px #F1B73A;
+}
+
+/* --- Contenido (Debajo del Parallax) --- */
+.contenido {
+    padding: 50px 20px;
+    background-image: url('img/BackgroundTile.jpg');
+    background-repeat: repeat;
+    text-align: center;
+    height: 1000px;
+}
+
+.random {
+    width: 100%;
+    height: 500px;
+    background-color: #ffe3c9;
+}
